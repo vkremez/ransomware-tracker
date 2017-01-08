@@ -1,2 +1,1 @@
-web: gunicorn gettingstarted.wsgi --log-file -
-
+web: python manage.py collectstatic --noinput; python manage.py runserver
