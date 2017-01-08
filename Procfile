@@ -1,1 +1,1 @@
-web: python manage.py collectstatic --noinput; python manage.py runserver
+web: gunicorn charts.wsgi --log-file -
