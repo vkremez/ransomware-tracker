@@ -1,0 +1,16 @@
+[
+    {
+        "id": "temperature",
+        "title": "RansomwareTracker",
+        "titlePosition": "in",
+        "vAxis": {
+            "title": "Tracker Malware"
+        }
+    },
+
+    {
+        "id": "rates",
+        "title": "Ransomware",
+        "titlePosition": "out"
+    }
+]

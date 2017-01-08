@@ -1,0 +1,26 @@
+{% load chartkick %}
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Ransomware Tracker @VK_Intel</title>
+
+        <script src="http://www.google.com/jsapi"></script>
+
+        <!-- To use Highcharts uncomment the following 2 lines and delete the previous one
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="http://code.highcharts.com/highcharts.js"></script>
+        -->
+
+        <script src="http://ankane.github.io/chartkick/chartkick.js"></script>
+    </head>
+    <body>
+        <strong>Ransomware Tracker @VK_Intel</strong>
+        {% line_chart exchange with min=0.4 id='rates' %}
+        {% pie_chart browser_stats with library={"title":"Ransomware Pie"} %}
+        {% column_chart browser_stats %}
+        {% line_chart temperature with id='temperature' %}
+        {% bar_chart sizes with id='sizes' %}
+        {% area_chart areas with id='areas' %}
+    </body>
+</html>
